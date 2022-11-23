@@ -1,0 +1,110 @@
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+sns.lineplot(x = 'week', y = 'resp', data = patient)
+
+plt.show()
+
+------------------------------------------------------------------------
+
+print(food.sort_index(level = 'item', ascendig=FALSE))
+
+------------------------------------------------------------------------
+
+import numpy as np
+
+average_age = np.mean(age)
+spread_age = np.std(age)
+
+print(average_age)
+print(spread_age.round(2))
+
+------------------------------------------------------------------------
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+ax = sns.scatterplot(data = steam, x = "temp", y = "usage")
+
+plt.show()
+
+------------------------------------------------------------------------
+
+print(df.ix['two':])
+
+------------------------------------------------------------------------
+
+print(pd.food.head())
+
+------------------------------------------------------------------------
+
+print(chess.index)
+
+------------------------------------------------------------------------
+
+x = np.array([2.2, 0.9, 4.4, 6.7, 2.8, 3.2, 1.1, 3.5])
+
+x_var = np.var(x)
+x_stdev = np.std(x)
+
+print('Variance: {:4.2f}'.format(x_var))
+print('Std Deviation: {:4.2f}'.format(x_stdev))
+
+------------------------------------------------------------------------
+
+df['language'] = ['python', 'R', 'R', 'python']
+
+print(df)
+
+------------------------------------------------------------------------
+
+print(df[:,[2,0]])
+
+------------------------------------------------------------------------
+
+import pandas as pd
+
+column_names = ['temperature','luminosity','radius']
+
+stars.columns = column_names
+
+print(stars.head())
+
+------------------------------------------------------------------------
+
+print(df.loc[0:2])
+
+------------------------------------------------------------------------
+
+missing_total_by_column = wine.isna().sum()
+
+print(missing_total_by_column)
+
+------------------------------------------------------------------------
+
+import pandas as pd 
+
+Q1 = df['age'].quantile(0.25)
+Q3 = df['age'].quantile(0.75)
+
+print(Q3-Q1)
+
+------------------------------------------------------------------------
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+sns.lineplot(x = 'day', y = 'order', data = df)
+
+
+plt.xticks(rotation = 45)
+plt.show()
+
+------------------------------------------------------------------------
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+sns.jointplot(x = 'age', y = 'value', data = valuation)
+
+plt.show()
